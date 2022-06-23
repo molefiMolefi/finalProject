@@ -1,0 +1,24 @@
+.primary_color{
+   -fx-background-color: #181818;
+ }
+ .secondary-color{
+  -fx-background-color: #121212;
+ }
+ .selected{
+  -fx-border-color:#1ED760;
+  -fx-border-width: 0 0 0 5;
+ }
+ .search-container{
+ -fx-background-color: #fff;
+ -fx-background-radius: 100;
+ }
+ .scroll-pane > .viewport{
+ -fx-background-color: #181818;
+ }
+ .button: hover{
+ -fx-background-color: blue;
+}
+.button:pressed{
+ -fx-background-color: cyan;
+}
+

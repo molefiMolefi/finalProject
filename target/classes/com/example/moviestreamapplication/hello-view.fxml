@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1315.0" styleClass="primary_color" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviestreamapplication.HelloController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="235.0" spacing="20.0" styleClass="secondary-color" stylesheets="@../../../style.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/ic_more.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <VBox prefHeight="233.0" prefWidth="235.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0" stylesheets="@../../../style.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/ic_home.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Home" textFill="#f8f4f4">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/ic_browse.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Explore" textFill="#a1a1a1">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0" styleClass="selected" stylesheets="@../../../style.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="About Us" textFill="#a1a1a1">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="44.0" prefWidth="209.0" text="AVAILABLE GENRE" textFill="#a1a1a1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="192.0" text="Romance" textFill="#a1a1a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="192.0" text="Comedy" textFill="#a1a1a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="192.0" text="Action" textFill="#a1a1a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="1080.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/ic_back.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/ic_forward.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="215.0" styleClass="search-container" stylesheets="@../../../style.css">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/ic_search.png" />
+                           </image>
+                        </ImageView>
+                        <TextField promptText="search" style="-fx-background-color: transparent;" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="120.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="1080.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@img/focuslogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <ScrollPane prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox prefHeight="1080.0" prefWidth="1080.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="119.0" text="Romance" textFill="#eeebeb">
+                           <font>
+                              <Font name="Arial Narrow" size="18.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane minViewportHeight="245.0" prefHeight="150.0" prefWidth="676.0" style="-fx-background-color: transparent;">
+                           <content>
+                              <HBox prefHeight="200.0" prefWidth="1080.0">
+                                 <children>
+                                    <VBox prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="mv1_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                                                   <image>
+                                                      <Image url="@img/50.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="title1_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Fifty Shades " textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="mv2_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/shadow%20.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="title2_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Shadow &amp; bone" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="225.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="mv3_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/the%20gud.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="title3_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="The Princess Guard" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="440.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="mv4_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/IMG-20220623-WA0021.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="title4_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="The Story of Us" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="870.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="mv5_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/perfect%20.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="title5_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Perfect" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="870.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="mv6_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/trust%20.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="title6_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Trust " textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="1085.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="mv7_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/IMG-20220623-WA0022.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="title7_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Devi &amp; Paxton " textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="880.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="mv8_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/the-engagement-back-up-movie-480x720-1.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="title8_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="The Engagement" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </content>
+                        </ScrollPane>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="119.0" text="Comedy" textFill="#eeebeb">
+                           <font>
+                              <Font name="Arial Narrow" size="18.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane layoutX="10.0" layoutY="31.0" minViewportHeight="245.0" prefHeight="177.0" prefWidth="676.0" style="-fx-background-color: transparent;">
+                           <content>
+                              <HBox prefHeight="240.0" prefWidth="1080.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="cmv1_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/madea.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="ctitle1_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label styleClass="primary_color" stylesheets="@../../../style.css" text="Homecoming" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="cmv2_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/wmoney.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="ctitle2_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label styleClass="primary_color" stylesheets="@../../../style.css" text="White People  Money " textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="226.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="cmv3_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/1up.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="ctitle3_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label styleClass="primary_color" stylesheets="@../../../style.css" text="1UP" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="442.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="cmv4_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/eferything.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="ctitle4_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label styleClass="primary_color" stylesheets="@../../../style.css" text="Everything everything " textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="658.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="cmv5_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/jurasic.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="ctitle5_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label styleClass="primary_color" stylesheets="@../../../style.css" text="Jurassic World " textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="874.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="cmv6_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/MV5BNjNhNWJhZmQtMGY2NS00NTcxLTliY2MtN2RlN2U5ZDMzZjlkXkEyXkFqcGdeQXVyNjA3ODM1Njg@._V1_.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="ctitle6_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label styleClass="primary_color" stylesheets="@../../../style.css" text="Living  for the Lord" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="1090.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="cmv7_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/81WsiMg9XfL.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="ctitle7_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label styleClass="primary_color" stylesheets="@../../../style.css" text="Lyle Crocodile " textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="1306.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="cmv8_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/download.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="ctitle8_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label styleClass="primary_color" stylesheets="@../../../style.css" text="The Security  Guard" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </content>
+                        </ScrollPane>
+                        <Label layoutX="10.0" layoutY="291.0" prefHeight="17.0" prefWidth="119.0" text="Action" textFill="#eeebeb">
+                           <font>
+                              <Font name="Arial Narrow" size="18.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane layoutX="10.0" layoutY="312.0" minViewportHeight="245.0" prefHeight="177.0" prefWidth="676.0" style="-fx-background-color: transparent;">
+                           <content>
+                              <HBox prefHeight="240.0" prefWidth="1080.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="amv1_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/collision.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="atitle1_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Collision" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="amv2_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/beast.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="atitle2_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Beast" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="226.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="amv3_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/elementary.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="atitle3_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Elementary" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="442.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="amv4_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/hyde.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="atitle4_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Hyde Park" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="658.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="amv5_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/rock.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="atitle5_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Black  Adam " textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="874.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="amv6_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/mission%20.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="atitle6_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Mission Impossible" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="1090.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="amv7_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/spider.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="atitle7_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Spiderhead" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="1306.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="amv8_btn" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="204.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="199.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/images%20(1).jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="atitle8_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@../../../style.css">
+                                             <graphic>
+                                                <Label text="Love &amp; Thunder" textFill="#f8f0f0">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </content></ScrollPane>
+                     </children>
+                  </VBox>
+               </content>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
